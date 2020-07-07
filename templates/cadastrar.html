@@ -10,19 +10,19 @@
         <div class="form-row">
             <div class="form-group col-md-10">
                 <label for="address">Endereço</label>
-                <input type="text" class="form-control" name="rua" id="rua" size="60" value="{{ end.address }}">
+                <input type="text" class="form-control" name="rua" id="rua" size="60" value="{{ end.address }}" required>
             </div>
         </div>
 
         <div class="form-row">
             <div class="form-group col-md-8">
                 <label for="district">Bairro</label>
-                <input type="text" class="form-control" name="bairro" id="bairro" size="40" value="{{ end.district }}">
+                <input type="text" class="form-control" name="bairro" id="bairro" size="40" value="{{ end.district }}"required>
             </div>
             <div class="form-group col-md-2">
                 <label for="number">Número</label>
                 <input type="text" class="form-control" id="numero" name="numero" maxlength="6"
-                    value="{{ end.number }}">
+                    value="{{ end.number }}" required>
             </div>
         </div>
 
@@ -38,18 +38,18 @@
         <div class="form-row">
             <div class="form-group col-md-5">
                 <label for="city">Cidade</label>
-                <input type="text" class="form-control" name="cidade" id="cidade" size="40" value="{{ end.city }}">
+                <input type="text" class="form-control" name="cidade" id="cidade" size="40" value="{{ end.city }}"required>
             </div>
 
             <div class="form-group col-md-2">
                 <label for="state">Estado</label>
-                <input type="text" class="form-control" name="uf" id="uf" size="2" value="{{ end.uf }}">
+                <input type="text" class="form-control" name="uf" id="uf" size="2" value="{{ end.uf }}"required>
             </div>
 
 
             <div class="form-group col-md-3">
                 <label for="zipcode">CEP</label>
-                <input type="text" class="form-control" name="cep" id="cep" size="10" maxlength="9"
+                <input type="text" class="form-control" name="cep" id="cep" size="10" maxlength="8"
                     onblur="pesquisacep(this.value)" value="{{ end.zipcode }}" required>
                 <input name="ibge" type="text" id="ibge" size="8" hidden>
             </div>
