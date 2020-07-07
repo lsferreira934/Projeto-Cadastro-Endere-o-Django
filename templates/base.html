@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+{% load static %}
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/db487eccaf.js" crossorigin="anonymous"></script>
+
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+   
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="/">
+                <img src="{% static 'images/iconecasa.png' %}" width="30" height="30" class="d-inline-block align-top"
+                    alt="" loading="lazy">
+                <h2>Cadastros&ampcia</h2>
+                <p>Cadastro de endereços</p>
+            </a>
+        </nav>
+        </nav>
+        {% block content %}{% endblock %}
+
+        <footer>
+
+            <p>CapSistem-Cadastros&cia</p>
+            <p>Desenvolvido por Leandro Ferreira</p>
+
+        </footer>
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+    <script>
+        $('#myModal').on('shown.bs.modal', function () {
+            $('#myInput').trigger('focus')
+        })
+    </script>
+</body>
+
+</html>

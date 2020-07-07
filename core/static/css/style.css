@@ -1,0 +1,136 @@
+.container-fluid{
+    padding:0px;
+    font-family: sans-serif;
+    
+}
+/* Navbar */
+nav{
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+}
+/* Form */
+
+div.divform {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+div#botao {
+    display: block;
+    position: absolute;
+    bottom: 204px;
+    left: 535px;
+
+}
+
+label{
+    font-size: 15pt;
+    
+}
+/* button */
+.list-div{
+    padding:0px;
+    display: flex;
+    margin-left: 10px;
+}
+
+btn btn-success{
+    width: 100%;
+   
+}
+
+
+thead {
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+div.button{
+    float: left;
+    margin-left: 10px;
+}
+
+
+th.col1{
+    width: 300px;
+    
+}
+
+div {
+    display: inline-block;
+}
+
+/*table */
+
+.fa-trash {
+    cursor: pointer;
+    margin: auto;
+    width: 10px;
+    margin-left: 30px;
+    color: red;
+}
+i.fas.fa-edit {
+    cursor: pointer;
+    margin: auto;
+    margin-left: 19px;
+    color:#18a038;
+}
+
+
+a.linktab {
+    color: black;
+    font-style: italic;
+    text-decoration: none;
+}
+
+
+
+
+div#cadTxt {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+button#cadButton {
+    margin-left: 0;
+    margin-bottom: 10px;
+    width: 300px;
+}
+
+/*footer*/
+
+footer {
+    background-color:#333;
+    height: 250px;
+    margin-top: 316px;
+
+}
+
+footer p{
+    color:white;
+    text-align: center;
+    top: 50%;
+    position: relative;
+}
+
+
+
+
+/* modal*/
+#modal {
+    background-color: #0e0a14ef;
+    height: 100%;
+    width: 100%;
+    
+    position: fixed;
+    top: 0;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 400ms;
+}

@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+{% block title %}Tabela de Endereço{% endblock %}
+
+
+{% block content %}
+
+
+
+<div class="button">
+    <a href="/cadastrar/">
+        <button type="button" class="btn btn-success" id="cadButton">Cadastre o seu endereço</button>
+    </a>
+</div>
+
+
+<table class="table  table-hover">
+    <thead>
+        <tr class="titleTable">
+            <th class="col1">Endereço</th>
+            <th class="col2">Bairro</th>
+            <th class="col3">Número</th>
+            <th class="col4">Cidade</th>
+            <th class="col5">UF</th>
+            <th class="col6">Cep</th>
+            <th class="col7">Editar</th>
+            <th class="col7">Deletar</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        {% for p in end %}
+        <tr id="{{p.id}}" value="{{p.id}}" onclick=""></tr>
+        <td>{{p.address}}</td>
+        <td>{{p.district}}</td>
+        <td>{{p.number}}</td>
+        <td>{{p.city}}</td>
+        <td>{{p.uf}}</td>
+        <td>{{p.zipcode}}</td>
+        <td> <a href="/cadastrar/?id={{p.id}}"><span><i class="fas fa-edit"></i></span></a></td>
+        <td> <i type="button" class="fas fa-trash" data-toggle="modal" data-target="#myModal"></i></span></a>
+            <!-- The Modal -->
+            <div class="modal" id="myModal">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Deseja realmente excluir?</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body text-right">
+                            <a href="/{{p.id}}">
+                                <button type="button" class="btn btn-danger">Excluir</button>
+                            </a>
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </td>
+
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<!-- Button to Open the Modal -->
+
+
+
+
+
+{% endblock %}
