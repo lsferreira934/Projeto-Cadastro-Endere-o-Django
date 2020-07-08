@@ -104,8 +104,9 @@ button#cadButton {
 
 footer {
     background-color:#333;
-    height: 250px;
-    margin-top: 316px;
+    height: 300px;
+    margin-top: auto;
+
 
 }
 
