@@ -1,4 +1,4 @@
-# Projeto Cadastro de Endereço ultilizando 
+# Projeto Cadastro de Endereço
 Tecnologias Utilizadas: Python Django, Sqlite3 + Javascript + Html5 + Css + Bootstrap 4
 
 ### ## Python Django:
