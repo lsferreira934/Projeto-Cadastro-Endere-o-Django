@@ -38,4 +38,4 @@ Montagem básica do estilo do site.
 Script de funcionamento do relógio e da transição de temas de acordo com o horário do dia.
 
 ### Bootstrap 4
-Foi utilizado formularios a  layouts ultilizando a tecnologia.
+Foi utilizado layouts formularios e model ultilizando a tecnologia.
