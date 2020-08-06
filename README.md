@@ -29,13 +29,13 @@ Desenvolvimento do banco de dados simples.
     class meta:
         db_table = 'Address'
 ### HTML5:
-Montagem da páginas.
+Montagem das páginas.
 
 ### CSS3:
 Montagem básica do estilo do site.
 
 ### JavaScript:
-Script de funcionamento do relógio e da transição de temas de acordo com o horário do dia.
+Utilização da API viacep para preenchimento dos campos do formulário
 
 ### Bootstrap 4
 Foi utilizado layouts formularios e model ultilizando a tecnologia.
