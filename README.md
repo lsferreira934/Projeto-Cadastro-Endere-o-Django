@@ -38,4 +38,4 @@ Montagem básica do estilo do site.
 Utilização da API viacep para preenchimento dos campos do formulário
 
 ### Bootstrap 4
-Foi utilizado layouts formularios e model ultilizando a tecnologia.
+Foi utilizado layouts, formularios e model ultilizando a tecnologia.
